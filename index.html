@@ -495,7 +495,7 @@ const STAGES = [
     title: "第一幕：犬神家の一族・遺言状と家宝の呪い",
     questions: [
       {
-        "story": "製薬王・犬神佐兵衛が遺した家宝「斧（きよき）・琴（こと）・菊（きく）」の鑑定手数料 60,000円を現金で古美術商に支払った。（支払手数料）（現金）",
+        "story": "製薬王・犬神佐兵衛が遺した家宝「斧（よき）・琴（こと）・菊（きく）」の鑑定手数料 60,000円を現金で古美術商に支払った。（支払手数料）（現金）",
         "debit": [{ "account": "支払手数料", "amount": 60000 }],
         "credit": [{ "account": "現金", "amount": 60000 }],
         "explanation": "鑑定役務への対価は費用（Expense / 費用）の支払手数料（Commission Expense）として借方に計上し、資産（Asset / 資産）である現金（Cash）の減少を貸方に記帳します。"
@@ -520,8 +520,8 @@ const STAGES = [
       {
         "story": "落武者の祟りに怯える多治見家の鍾乳洞を探索するため、強力な懐中電灯と探検用命綱（消耗品費）25,000円を掛けで購入した。（消耗品費）（買掛金）",
         "debit": [{ "account": "消耗品費", "amount": 25000 }],
-        "credit": [{ "account": "買掛金", "amount": 25000 }],
-        "explanation": "探索用資材の購入は費用（Expense / 費用）の消耗品費（Supplies Expense）を借方に計上し、営業債務である負債（Liability / 負債）の買掛金（Accounts Payable）を貸方に記入します。"
+        "credit": [{ "account": "未払金", "amount": 25000 }],
+        "explanation": "探索用資材の購入は費用（Expense / 費用）の消耗品費（Supplies Expense）を借方に計上し、営業取引外のものである負債（Liability / 負債）の未払金（Accounts Payable）を貸方に記入します。"
       },
       {
         "story": "多治見要蔵の狂気によって破壊された村の土蔵の白壁と格子戸を修繕し、修繕費用 40,000円を現金で支払った。（修繕費）（現金）",
